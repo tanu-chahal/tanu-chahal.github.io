@@ -1,0 +1,688 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu:wght@300&display=swap');
+/* Styling */
+*{  background-color: #191B1F;
+    /* #393e3a; */
+    padding: 0;
+    margin: 0;
+}
+h1{  /*Applies on all pages */
+    font-family: 'Ubuntu', sans-serif;
+    font-weight:900; 
+    font-size: 2.5rem;
+    /* font-size: 40px; */
+    margin: 23px;
+    color: white;
+}
+h2{ color: white;
+    font-size:1.9rem;
+}
+p{ /*Applies on all pages*/
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; 
+    margin-bottom: 7px;
+    color: white;
+}
+h4{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600; 
+    font-size: 1.2rem;
+    color: white;
+}
+.container{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    padding: 12px;
+    width: 100vw;
+    height:91vh;
+}
+.hamburger{ visibility: hidden;}
+.sidebar{
+    background-color: #22e6dc79;
+    /* #f30698f3;   */
+    position: absolute;
+    height: 9vh;
+    width: 100vw;
+    /* transition:  transform 0.3s ease-in; */
+    z-index: 1;
+}
+.socialMedia{
+    background-color: transparent;
+    margin: 0px 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.socialIcon{
+    background-color: transparent;
+    height: 3rem;
+    margin: 5px 1px;
+    cursor: pointer;
+    /* transition: height 100ms ease-in-out; */
+}
+.socialIcon:hover{
+    color: #191B1F;
+}
+.logo{
+    background-color: transparent;
+    padding: 6px 20px;
+    flex-shrink: 2;
+   }
+.logo a{
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: transparent;
+}
+.logo a span{
+    color:#ff009d;
+    font-weight: 900;
+    background-color: transparent;
+    font-size: 32px;
+}
+    
+.sidebar nav {
+ background-color: transparent;
+  padding: 12px 20px;
+  font-family: 'Montserrat', sans-serif; 
+  font-weight: bold; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navUl {
+    list-style: none;
+    background-color: transparent; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
+.sidebar nav ul li {
+    background-color:  transparent; 
+    font-size: 25px;
+    padding: 10px 0px;
+    margin: 0px 10px;
+}
+.sidebar nav ul li a{
+    background-color: transparent; 
+    text-decoration: none;
+    color: white;
+}
+.sidebar nav ul li a:hover{
+    color: #191B1F;
+    font-size: 28px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.infoContainer{
+    padding-top: 20px;
+    height: 58vh;
+    width: 80vw;
+    /* background-color: #ce1b96; */
+    margin: 120px auto;
+    display: flex;
+   justify-content: space-around;
+   color: white;
+}
+.information{
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+.hello{
+    font-size: 50px;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+.name{
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif; 
+     font-weight: bold;
+     color: white;
+}
+.about{
+    font-size: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #22e6dc;
+}
+.moreabout{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    margin-top: 20px;
+    color: white
+}
+.buttons{
+    margin-top: 30px;
+}
+.btn{
+    border-radius: 25px;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background-color: #276c69;
+    padding: 7px 14px;
+    margin: 0px 8px;
+    cursor: pointer;
+}
+.btn-sm{
+    font-size: 15px;
+    margin: 5px 0px;
+    margin-bottom:10px ;
+}
+.homeBtn{
+    margin: 15px 8px;
+}
+.btn:hover{
+    background-color: white;
+    color: #276c69;
+}
+.profilepic img{
+    /* z-index: 5; */
+    height: 58vh;
+    user-select: none;
+    margin: 0px 50px;
+    
+}
+
+/* Contact Page Styling */
+.contactForm{
+    padding: 0px 50px;
+    padding-top: 140px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; 
+    font-size: 20px;
+    margin: 0px 80px;
+    color: white;
+}
+.contactForm h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bolder; 
+    padding: 10px 0px;
+    margin: 0px;
+}
+#emailHelp{
+    font-size: 11px;
+    padding: 2px 10px 0px 10px;
+    color: #22e6dc;
+}
+.formdivs{  
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+}
+.form-control{
+    max-width: 25vw; 
+    height: 16px;
+    border-radius: 5px;
+    padding: 3px;
+    background-color: white;
+    margin-top: 3px;
+}
+#form-check {
+    flex-direction: row;
+}
+#form-check input{
+    width: 20px;
+    margin-right: 5px;
+}
+
+/* Blog Page Styling */
+.blogContainer{
+    margin: 80px 80px;
+}
+.blogItem{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700; 
+    margin: 10px;
+    padding: 5px 8px;
+    border: 2px solid #df108fb3; 
+}
+.blogPara{
+    overflow: hidden;
+    height: 5vh;
+}
+.blogShort{
+    height:auto;
+}
+.blogItem h2{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700; 
+    padding: 5px 0px;
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+/* About Me Page Styling */
+
+.devinfoContainer{
+    margin: 80px;
+}
+.devinfoContainer h2{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    margin: 15px;
+    margin-top: 40px;
+    text-align: center;
+    padding: 5px 0px;
+}
+.aboutPara{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin: 12px; 
+    font-size: 1.4rem;  
+    line-height: 1.5;
+}
+.extraPara{
+    line-height: 1.4;
+    margin: 15px;
+    color: #22e6dc;
+}
+.skillContainer{
+    padding:12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.skill{
+    height: 8px;
+    background-color: #22e6dc;
+    border: 0px;
+    border-radius: 3px;
+}
+.skillIcon{
+    padding: 4px 10px;
+    margin-right: 7px;
+    color: #276c69;
+    border-radius: 4px;
+    background-color: white;
+}
+.skillItem{
+    display:flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    padding: 7px 0px ;
+}
+.skillBar{
+background-color: rgb(15, 12, 12);
+width: 285px;
+border-radius: 3px;
+height: 8px;
+margin: 4px;
+}
+
+.html{
+    width: 235px;
+    animation: slidingHtml 2.5s ease-in-out 100ms 1;
+}
+@keyframes slidingHtml {
+    from{
+    width: 0px;
+    }
+    to{
+        width: 235px;
+    }
+}
+.cLang{
+    width: 165px;
+    animation: slidingC 2.5s ease-in-out 100ms 1;
+}
+@keyframes slidingC {
+    from{
+    width: 0px;
+    }
+    to{
+        width: 165px;
+    }
+}
+.javascript{
+    width: 125px;
+    animation: slidingJavascript 2.5s ease-in-out 100ms 1;
+}
+@keyframes slidingJavascript {
+    from{
+    width: 0px;
+    }
+    to{
+        width: 125px;
+    }
+}
+.css{
+    width: 90px;
+    animation: slidingCss 2.5s ease-in-out 100ms 1;
+}
+@keyframes slidingCss {
+    from{
+    width: 0px;
+    }
+    to{
+        width: 90px;
+    }
+}
+.gitH{
+    width: 70px;
+    animation: slidingGitH 2.5s ease-in-out 100ms 1;
+}
+@keyframes slidingGitH{
+    from{
+    width: 0px;
+    }
+    to{
+        width: 70px;
+    }
+}
+.reactJS{
+    width: 75px;
+    animation: slidingReactJS 2.5s ease-in-out 100ms 1;
+}
+@keyframes slidingReactJS{
+    from{
+    width: 0px;
+    }
+    to{
+        width: 75px;
+    }
+}
+
+
+
+/* Projects style */
+.projects{
+    /* background-color: brown; */
+    margin: 0px 0px 20px 0px;
+    max-height: 100vh;
+    max-width: 100vw;
+    display: grid;
+    place-items: center;
+   }
+   .projects h2{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700; 
+    padding: 5px 0px;
+    text-transform: capitalize;
+   }
+    .filterBtns{
+        margin: 15px auto;
+        display: flex;
+        justify-content: center;
+    }
+    .filterBtn{
+        margin: 2px 6px;
+        text-transform: capitalize;
+    }
+   .projectItem{
+    /* border: 2px solid #df108fb3;  */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 15px auto;
+    border-radius: 7px;
+    box-shadow: 3px 5px 6px 3px #df109091; 
+    position: relative;
+    bottom: 0%;
+   }
+    .projectItem:hover{
+    bottom: 5%;
+    box-shadow: 5px 7px 7px 5px #df1090d0;
+   } 
+   .projectImg{
+    /* border: 4px solid #df108fb3; */
+    border-radius: 7px;
+    padding: 7px;
+    margin: auto 7px;
+    height: 100px;
+    display: block;
+    cursor: pointer;
+    background-color: transparent;
+   }
+   .projectDesc{
+        padding: 5px 10px;
+        max-width: 200px;
+        font-size: 0.80rem;
+        user-select: none;
+     background-color: transparent;  
+   }
+
+   .itemHeader h4{
+    border-bottom: 3px solid #22e6dc;
+    padding: 7px;
+    margin: 10px 0px;
+    text-transform: capitalize;
+   background-color: transparent;
+   }
+   .projectData{
+    margin: auto 7px;
+   background-color: transparent;
+   }
+   .projectItemsContainer{
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1000px;
+    display: grid;
+    gap: 3rem 2rem;
+    grid-template-columns: auto auto;
+    justify-items: center;
+   }
+.moreProjects{
+    position: relative;
+    left: 45%;
+    margin: 20px 0px;
+}
+
+
+
+
+/* Services Page Styling */
+.servicesContainer{
+    margin: 80px;
+}
+.servicesContainer h1{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight:900; 
+    font-size: 2.5rem;
+    margin: 23px;
+}
+.services{
+    /* max-width: 70vw; */
+    min-height: 40vh;
+    display: grid;
+    gap: 2rem 1rem;
+    grid-template-columns: auto auto;
+    justify-items: self-start; 
+}
+.serviceItem{
+    position: relative;
+    box-shadow: 3px 5px 7px 3px #22e6dc87;
+    border-radius: 17px;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    background-color: #191b1f;
+    z-index: 0;
+}
+ .serviceItem:hover{
+    bottom: 5%;
+    box-shadow: 4px 6px 10px 4px #22e6dcc2;
+} 
+.serviceImg{
+    width: 165px;
+    user-select: none;
+    border-radius: 10px;
+    margin: 5px;
+}
+.serviceItem h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: white;
+    margin: 10px auto;
+    background-color: transparent;
+}
+.serviceInfo{
+    font-family: 'Montserrat', sans-serif;
+    max-width: 220px;
+    color: white;
+    padding: 4px;
+    display: inline;
+    background-color: transparent;
+    margin: 5px;
+}
+.serviceInfo p{
+    background-color: transparent;
+    font-size: 0.9rem;
+}
+
+
+
+
+
+
+
+
+/* Media Queries */
+@media (max-width: 1000px){
+    .profilepic{
+        display: none;
+    } 
+    .socialMedia{
+       display: none;
+    }
+    .serviceItem h2{ font-size: 1.3rem;}
+    .serviceInfo p{ font-size: 0.8rem;}
+    .serviceImg{
+        width: 130px;
+        border-radius: 8px;
+    }
+}
+@media (max-width: 701px) {
+    
+/* Hamburger & Close Button Styling */
+.main{
+    padding: 15px;
+    height: 100vh;
+    width: 100vw;
+}
+.sidebar{
+    background-color:  #22e6dc79;
+    position: absolute;
+    height: auto;
+    width: auto; 
+    transition:  transform 0.3s ease-in;
+    z-index: 1;
+}
+.sidebar nav {
+    min-height: 50vh;
+     padding: 30px 5px;
+     font-family: 'Montserrat', sans-serif; 
+     font-weight: bold; 
+     flex-direction: column;
+     justify-content:flex-start; 
+}
+.logo{ margin: 12px 2px;}
+.socialMedia{
+    display: flex;
+    justify-self: flex-end;
+    margin-top : 60px;
+}
+.navUl {
+    margin: 5px 10px;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.hamburger{
+    visibility: visible;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin-top: 5px;
+    background-color:transparent;
+    z-index: 2;
+}
+.close{
+background-color: transparent;
+margin-left: 180px;
+cursor: pointer;
+}
+#menu{
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: transparent;
+}
+.hamburger button{
+    color: white;
+    border: 0px;
+    padding: 3px;
+    background-color:transparent;
+}
+.sidebarGo{
+        transform: translate(-443px, 0px);
+        position: absolute;
+        transition:  transform 0.2s ease-out;
+    }
+
+
+    .contactForm{
+        padding-top: 5px;
+    }
+    .form-control{
+        max-width: 60vw;
+    }
+    .blogContainer, .contactForm, .devinfoContainer, .servicesContainer, .infoContainer{
+        margin: 55px 5px;
+    }
+    .skillItem{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .infoContainer{
+        margin-top: 145px;
+        margin-left: 10px;
+    }
+    .dots{
+        display: none;
+    }
+
+    .projectDesc{
+        padding: 2px 4px;
+        font-size: 0.70rem;
+    }
+    .projectItemsContainer{
+        grid-template-columns: auto;
+    }
+    .services{grid-template-columns: auto; }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 400px) {
+    .prev, .next,.text {font-size: 13px;}
+   .h1{ font-size: 2rem;}
+   .h2{font-size: 1.5rem;}
+   .h4{font-size: 1rem;}
+   .serviceItem{ flex-direction: column; min-width: 265px;}
+   .serviceImg{
+    width: 175px;
+    user-select: none;
+    border-radius: 8px;
+}
+.serviceItem h2{ font-size: 1.3rem;}
+.serviceInfo p{ font-size: 0.8rem;}
+   }

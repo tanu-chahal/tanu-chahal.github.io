@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Tanu Chahal</title>
+    <link rel="stylesheet" href="mystyle.css">
+      <!-- Font Awesome Code -->
+      <script src="https://kit.fontawesome.com/a6a7719e5c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+      <div class="sidebar sidebarGo" id="sidebar">
+        <nav>
+          <div class="logo"><a href="index.html">tanu<span>Chahal</span></a></div>
+          <ul class="navUl">
+           <li> <a href="index.html">Home</a></li>
+           <li> <a href="aboutme.html">About</a></li>
+           <li> <a href="services.html">Services</a></li>
+           <li> <a href="blog.html">Blog</a></li>
+           <li> <a href="contact.html">Contact</a></li>
+        </ul>
+        <ul class="socialMedia">
+          <!-- https://twitter.com/chahal__tanu  https://www.linkedin.com/in/tanuchahal/ https://www.youtube.com/channel/UCzvbrfKWezlj5vsQcBMa2Eg  https://github.com/tanu-chahal -->
+          <li><a href="https://github.com/tanu-chahal" target="_blank"><i class="fa-sharp fa-brands fa-github socialIcon"></i></a></li>
+          <li><a href="#" target="_blank"><i class="fa-sharp fa-brands fa-instagram socialIcon"></i></a></li>
+          <li><a href="https://www.youtube.com/channel/UCzvbrfKWezlj5vsQcBMa2Eg" target="_blank"><i class="fa-brands fa-youtube socialIcon"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/tanuchahal/" target="_blank"><i class="fa-brands fa-linkedin socialIcon"></i></a></li>
+           <li><a href="https://twitter.com/chahal__tanu" target="_blank"><i class="fa-brands fa-twitter socialIcon"></i></a></li>
+        </ul>
+      </nav>
+      </div>
+      
+      <div class="main">
+
+        <div class="hamburger" id="hamburger">
+          <button onclick="togSidebar()"><i class="fa-solid fa-bars fa-2x menu" id="menu"></i></button>
+          <button onclick="togSidebar()"><i class="fa-sharp fa-solid fa-xmark fa-2x close" id="close"></i></button>
+        </div>
+
+         <div class="contactForm">
+            <h1 class="h1media">Contact me for Work/General Enquiries</h1>
+            <form>
+                <div class="formdivs">
+                    <label for="clientname" class="form-label" required>Name</label>
+                    <input type="text" class="form-control" id="clientname" >
+                </div>
+
+                <div class="formdivs">
+                  <label for="clientemail" class="form-label">📧 Email address</label>
+                  <input type="email" class="form-control" id="clientemail" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email & phone with anyone else.</div>
+                </div>
+
+                <div class="formdivs">
+                  <label for="clientphone" class="form-label">📞 Phone</label>
+                  <input type="number" class="form-control" id="clientphone">
+                </div>
+
+                <div class="formdivs">
+                    <label for="enquiry" class="form-label">Enquiry</label>
+                    <input type="text" class="form-control" id="enquiry" >
+                </div>
+
+                <div class="formdivs" id="form-check">
+                  <input type="checkbox" class="form-check-input" id="isClient">
+                  <label class="form-check-label" for="isClient">I want you to work on a project with you.</label>
+                </div>
+
+                <button type="submit" class="btn btn-sm">Submit</button>
+              </form>
+         </div>
+     </div>
+</div> 
+<script src="myscript.js"></script>
+</body>
+</html>

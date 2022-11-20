@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Tanu Chahal</title>
+    <link rel="stylesheet" href="mystyle.css" />
+    <!-- Font Awesome Code -->
+    <script
+      src="https://kit.fontawesome.com/a6a7719e5c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar sidebarGo" id="sidebar">
+        <nav>
+          <div class="logo"><a href="index.html">tanu<span>Chahal</span></a></div>
+          <ul class="navUl">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutme.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <!-- <li><a href="contact.html">Contact</a></li> -->
+          </ul>
+          <ul class="socialMedia">
+            <!-- https://twitter.com/chahal__tanu  https://www.linkedin.com/in/tanuchahal/ https://www.youtube.com/channel/UCzvbrfKWezlj5vsQcBMa2Eg  https://github.com/tanu-chahal -->
+            <li>
+              <a href="https://github.com/tanu-chahal" target="_blank"
+                ><i class="fa-sharp fa-brands fa-github socialIcon"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" target="_blank"
+                ><i class="fa-sharp fa-brands fa-instagram socialIcon"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/channel/UCzvbrfKWezlj5vsQcBMa2Eg" target="_blank"
+                ><i class="fa-brands fa-youtube socialIcon"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/tanuchahal/" target="_blank"
+                ><i class="fa-brands fa-linkedin socialIcon"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/chahal__tanu" target="_blank"
+                ><i class="fa-brands fa-twitter socialIcon"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="main">
+        <div class="hamburger" id="hamburger">
+          <button onclick="togSidebar()">
+            <i class="fa-solid fa-bars menu fa-2x" id="menu"></i>
+          </button>
+          <button onclick="togSidebar()">
+            <i class="fa-sharp fa-solid fa-xmark close fa-2x" id="close"></i>
+          </button>
+        </div>
+        <div class="devinfoContainer">
+          <h1>About Me</h1>
+          <p class="aboutPara">
+            A quick intro I'm an undergrad 👩🏻‍🎓 pursuing Bachelors of Computer Applications at Kurukshetra University.<br/>I started to code coz it was my major but continued as I enjoyed it (or I didn't have any another choice🤭).
+            <br/>I love to explore different things & technologies, so you'll always find me with some course and a part random communities.</p>
+
+          <p class="extraPara">/*<br/>Apart from this, this bubbly soul is a passionate reader & music lover.
+            <br/>As I said I'm always curious about new things, that's why I have tried my hands on a bunch of other things like, graphics designing (specifically, logo designing), video editing, content writing & content creation. You can call them my hobbies.
+            <br/>*/
+          </p>
+
+          <h2>My Skills</h2>
+          <div class="skillContainer">
+            <div class="technicalSkills">
+              <div class="skillItem">
+                  <h4>HTML</h4>
+                  <div class="skillBar"><div class="skill html"></div></div>
+              </div>
+              <div class="skillItem">
+                <h4>CSS</h4>
+                <div class="skillBar"><div class="skill css"></div></div>
+              </div>
+              <div class="skillItem">
+                <h4>JavaScript</h4>
+                <div class="skillBar"><div class="skill javascript"></div></div>
+              </div>
+              <div class="skillItem">
+                <h4>C-Programming</h4>
+                <div class="skillBar"><div class="skill cLang"></div></div>
+              </div>
+              <div class="skillItem">
+              <h4>GitHub</h4>
+                <div class="skillBar"><div class="skill gitH"></div></div>
+              </div>
+              <div class="skillItem">
+                <h4>React JS</h4>
+                  <div class="skillBar"><div class="skill reactJS"></div></div>
+                </div>
+
+            </div>
+            </div>
+
+
+          <!-- Create a projects gallery -->
+          <div class="projects">
+            <h2>My Projects</h2>
+
+            <div class="projectsContainer">
+              <div class="filterBtns">
+                <!-- <button class="filterBtn btn-sm btn">All</button>
+                                 <button class="filterBtn btn-sm btn">JavaScript</button>
+                                 <button class="filterBtn btn-sm btn">React JS</button> -->
+              </div>
+              <div class="projectItemsContainer">
+                <!-- <div class="projectItem">
+                                         <img src="./Images/color_flipper.png" alt="Color Flipper" class="projectImg">
+                                         <div class="projectData">
+                                                          <div class="itemHeader"><h4>Random Color Flipper</h4>
+                                                          </div>
+                                                          <p class="projectDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid qui harum beatae minus consectetur cumque.</p>
+                                         </div>
+          
+                               </div> -->
+              </div>
+              <div class="moreProjects"> <a href="https://github.com/tanu-chahal" target="_blank"><button class="btn">...More</button></a> </div>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+    <script src="myscript.js"></script>
+    <script src="projectscript.js"></script>
+  </body>
+</html>
